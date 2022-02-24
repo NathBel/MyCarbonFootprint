@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCarbonFootprint">
         <activity
+            android:name=".CarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MotoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TrainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Analyze"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

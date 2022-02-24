@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_analyze.xml" value="0.25" />
+        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_car.xml" value="0.1" />
+        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_moto.xml" value="0.25" />
+        <entry key="..\:/Users/bellu/OneDrive/Documents/COURS/S4/MyCarbonFootprint/app/src/main/res/layout/activity_train.xml" value="0.25" />
       </map>
     </option>
   </component>
