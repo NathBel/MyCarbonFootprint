@@ -1,5 +1,6 @@
 package com.example.mycarbonfootprint;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         voiture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), CarActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -30,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         moto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MotoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -37,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), TrainActivity.class);
+                startActivity(intent);
             }
         });
     }
