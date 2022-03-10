@@ -19,14 +19,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_below="@+id/Title"
         android:layout_width="400dp"
         android:layout_height="300dp"
+        android:layout_below="@+id/Title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         app:srcCompat="@drawable/empreinte_fr_2016_graphe" />
 
     <TextView
+        android:id="@+id/tableTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -35,4 +36,13 @@
         android:textSize="12dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableTitle"
+        android:text="Votre consommation est de : "
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:layout_marginTop="50dp"
+        />
 </RelativeLayout>
