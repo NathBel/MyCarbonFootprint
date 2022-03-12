@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Title"
-        android:text="Analyse de votre conso :"
+        android:text="@string/Analyse"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="16dp"
@@ -37,6 +37,7 @@
         />
 
     <TextView
+        android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableTitle"
@@ -44,5 +45,13 @@
         android:layout_centerHorizontal="true"
         android:textSize="12dp"
         android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:onClick="print"
+        android:layout_below="@+id/text4"
         />
 </RelativeLayout>

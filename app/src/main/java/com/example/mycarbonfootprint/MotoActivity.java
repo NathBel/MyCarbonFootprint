@@ -37,4 +37,7 @@ public class MotoActivity extends AppCompatActivity {
         TextView tonTextView = (TextView)findViewById(R.id.Result);
         tonTextView.setText("Consommation estimée : " + result + " kgCO2e par passager");
     }
+
+    public void Register(View view) {
+    }
 }

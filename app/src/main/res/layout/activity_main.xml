@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Moto"
+            android:text="@string/Moto"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageButton
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingTop="100px"
-            android:text="Voiture"
+            android:text="@string/Voiture"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageButton
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingTop="100px"
-            android:text="Train"
+            android:text="@string/Train"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageButton

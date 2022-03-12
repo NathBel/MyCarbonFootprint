@@ -42,11 +42,12 @@ public class MainActivity extends AppCompatActivity {
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), TrainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Analyze.class);
                 startActivity(intent);
             }
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu m) {

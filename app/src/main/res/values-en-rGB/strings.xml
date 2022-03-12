@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyCarbonFootprint</string>
+    <string name="Moto">Motorbike</string>
+    <string name="Voiture">Car</string>
+    <string name="Train">Train</string>
+    <string name="Distance">Distance (in km) :</string>
+    <string name="NbPassager">Number of passengers :</string>
+    <string name="TypeMoteur">Type of engine :</string>
+    <string name="Thermique">Combustion engine</string>
+    <string name="Electrique">Electric engine</string>
+    <string name="Calculer">Calculate</string>
+    <string name="Scooter">Scooter</string>
+    <string name="TypeMoto">Type of 2 wheels :</string>
+    <string name="TypeTrain">Type of train :</string>
+    <string name="Metro">Subway</string>
+    <string name="RER">Regional Train</string>
+    <string name="Intercites">Intercity</string>
+    <string name="Tramway">Tramway</string>
+    <string name="TGV">HSR</string>
+    <string name="Analyse">Analysis of your consumption :</string>
+    <string name="Enregistrer">Register</string>
+</resources>

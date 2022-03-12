@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MyCarbonFootprint</string>
+    <string name="Moto">Moto</string>
+    <string name="Voiture">Voiture</string>
+    <string name="Train">Train</string>
+    <string name="Distance">Distance (en km) :</string>
+    <string name="NbPassager">Nombre de passager :</string>
+    <string name="TypeMoteur">Type de moteur :</string>
+    <string name="Thermique">Thermique</string>
+    <string name="Electrique">Electrique</string>
+    <string name="Calculer">Calculer</string>
+    <string name="Scooter">Scooter</string>
+    <string name="TypeMoto">Type 2 roues :</string>
+    <string name="TypeTrain">Type de train : </string>
+    <string name="Metro">Metro</string>
+    <string name="RER">RER / Transilien</string>
+    <string name="Intercites">Intercités</string>
+    <string name="Tramway">Tramway</string>
+    <string name="TGV">TGV</string>
+    <string name="Analyse">Analyse de votre conso :</string>
+    <string name="Enregistrer">Enregistrer</string>
 </resources>

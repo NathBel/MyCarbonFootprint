@@ -6,7 +6,7 @@
     <item
         android:id="@+id/menuAbout"
         android:icon="@drawable/information"
-        android:title=" "
+        android:title=""
         app:showAsAction="always" />
     <item
         android:id="@+id/menuSettings"

@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Train"
+        android:text="@string/Train"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="22dp"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="Distance (en km)"
+            android:text="@string/Distance"
             />
 
         <EditText
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Type 2 roues :"
+            android:text="@string/TypeTrain"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             />
@@ -61,19 +61,19 @@
             <RadioButton android:id="@+id/Metro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Metro" />
+                android:text="@string/Metro" />
             <RadioButton android:id="@+id/RER"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RER/Transilien" />
+                android:text="@string/RER"/>
             <RadioButton android:id="@+id/Intercités"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Intercités" />
+                android:text="@string/Intercites" />
             <RadioButton android:id="@+id/Tramway"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tramway" />
+                android:text="@string/Tramway" />
             <RadioButton android:id="@+id/TER"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             <RadioButton android:id="@+id/TGV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TGV" />
+                android:text="@string/TGV" />
         </RadioGroup>
 
     </LinearLayout>
@@ -90,12 +90,22 @@
         android:id="@+id/Calculer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculer"
+        android:text="@string/Calculer"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/Ligne2"
         android:layout_marginTop="30dp"
         android:onClick="Calculate"
         />
+
+    <Button
+        android:id="@+id/Enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="Register"
+        android:text="@string/Enregistrer" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CarActivity extends AppCompatActivity {
 
-    double conso;
+    private double conso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +34,14 @@ public class CarActivity extends AppCompatActivity {
         } else if (rb2.isChecked()){
             conso = 0.19;
         }
-        double result = (conso * dist) / nbpassager;
+        float result = (float) ((conso * dist) / nbpassager);
         TextView tonTextView = (TextView)findViewById(R.id.Result);
         tonTextView.setText("Consommation estimée : " + result + " kgCO2e par passager");
+    }
+
+    public void Register(View view) {
+        DbManager db = new DbManager(this);
+        String res = db.addRecord(1, 200F);
+        Toast.makeText(this, res, Toast.LENGTH_LONG).show();
     }
 }
