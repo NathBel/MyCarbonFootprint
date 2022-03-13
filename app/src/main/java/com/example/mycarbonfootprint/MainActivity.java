@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        voiture = (ImageButton) findViewById(R.id.boutonVoiture);
+        voiture = findViewById(R.id.boutonVoiture);
         voiture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        moto = (ImageButton) findViewById(R.id.boutonMoto);
+        moto = findViewById(R.id.boutonMoto);
         moto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
@@ -38,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        train = (ImageButton) findViewById(R.id.boutonTrain);
+        train = findViewById(R.id.boutonTrain);
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), Analyze.class);
+                Intent intent = new Intent(getApplicationContext(), AnalyzeActivity.class);
                 startActivity(intent);
             }
         });
@@ -56,5 +57,13 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem i) {
+        int id = i.getItemId();
+        if (id == R.id.menuAnalyze) {
+            Intent intent = new Intent(getApplicationContext(), AnalyzeActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(i);
+    }
 }

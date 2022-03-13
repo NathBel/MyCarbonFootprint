@@ -19,7 +19,7 @@
             android:name=".TrainActivity"
             android:exported="true" />
         <activity
-            android:name=".Analyze"
+            android:name=".AnalyzeActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -30,6 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
