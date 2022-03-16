@@ -4,16 +4,17 @@
 
 
     <item
-        android:id="@+id/menuAnalyze"
+        android:id="@+id/menuHistory"
         android:icon="@drawable/bar_chart"
         android:title=""
         app:showAsAction="always" />
     <item
         android:id="@+id/menuAbout"
         android:icon="@drawable/information"
-        android:title="" />
+        android:title="À Propos" />
     <item
         android:id="@+id/menuSettings"
         android:icon="@drawable/setting"
-        android:title=" " />
+        android:title=" "
+        android:visible="false" />
 </menu>

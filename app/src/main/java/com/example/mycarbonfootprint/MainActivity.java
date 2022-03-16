@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), AnalyzeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OLDAnalyzeActivity.class);
                 startActivity(intent);
             }
         });
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem i) {
         int id = i.getItemId();
-        if (id == R.id.menuAnalyze) {
-            Intent intent = new Intent(getApplicationContext(), AnalyzeActivity.class);
+        if (id == R.id.menuHistory) {
+            Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(i);

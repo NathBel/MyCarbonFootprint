@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mycarbonfootprint.Utils.ClientDbHelper;
 
-public class AnalyzeActivity extends AppCompatActivity {
+public class OLDAnalyzeActivity extends AppCompatActivity {
     private ClientDbHelper clientDbHelper;
     private SQLiteDatabase db;
 
