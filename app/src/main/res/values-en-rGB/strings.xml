@@ -20,4 +20,5 @@
     <string name="TGV">HSR</string>
     <string name="Analyse">Analysis of your consumption :</string>
     <string name="Enregistrer">Register</string>
+    <string name="TextAbout">Enregistrer</string>
 </resources>

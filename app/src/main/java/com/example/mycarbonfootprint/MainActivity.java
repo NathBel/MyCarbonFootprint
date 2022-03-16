@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.menuHistory) {
             Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
             startActivity(intent);
+        } else if (id == R.id.menuAbout) {
+            Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(i);
     }

@@ -19,7 +19,7 @@
             android:name=".TrainActivity"
             android:exported="true" />
         <activity
-            android:name=".OLDAnalyzeActivity"
+            android:name=".AboutActivity"
             android:exported="true" />
         <activity
             android:name=".HistoryActivity"

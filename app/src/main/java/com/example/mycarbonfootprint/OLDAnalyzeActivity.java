@@ -17,7 +17,6 @@ public class OLDAnalyzeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_analyze);
         clientDbHelper = new ClientDbHelper(this);
         db = clientDbHelper.getWritableDatabase();
     }
