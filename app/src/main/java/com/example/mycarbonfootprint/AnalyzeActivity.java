@@ -1,25 +1,33 @@
 package com.example.mycarbonfootprint;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mycarbonfootprint.Utils.MyDatabaseHelper;
+import com.example.mycarbonfootprint.Utils.ClientDbHelper;
 
 public class AnalyzeActivity extends AppCompatActivity {
-    private MyDatabaseHelper dbHelper;
+    private ClientDbHelper clientDbHelper;
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analyze);
-        dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 2);
+        clientDbHelper = new ClientDbHelper(this);
+        db = clientDbHelper.getWritableDatabase();
     }
 
     public void print(View view) {
-        dbHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        //values.put("result", "4.0");
+        //db.insert("History", null, values);
+        clientDbHelper.selectAll(db);
+        //db.close();
         Toast.makeText(this, "Created DB.", Toast.LENGTH_LONG).show();
     }
 }
