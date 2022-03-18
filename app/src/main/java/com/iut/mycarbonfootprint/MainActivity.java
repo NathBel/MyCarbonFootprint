@@ -7,7 +7,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         voiture = findViewById(R.id.boutonVoiture);
         voiture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), CarActivity.class);
                 startActivity(intent);
             }
@@ -33,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         moto = findViewById(R.id.boutonMoto);
         moto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MotoActivity.class);
                 startActivity(intent);
             }
@@ -42,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         train = findViewById(R.id.boutonTrain);
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), TrainActivity.class);
                 startActivity(intent);
             }
@@ -65,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         } else if (id == R.id.menuAbout) {
             Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-            intent.putExtra("info", "Ceci est un intent.");
+            intent.putExtra("info", "Vous venez du menu. (Intent)");
             startActivity(intent);
         }
         return super.onOptionsItemSelected(i);

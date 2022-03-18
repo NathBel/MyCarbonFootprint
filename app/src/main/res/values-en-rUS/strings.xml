@@ -19,6 +19,6 @@
     <string name="Tramway">Tramway</string>
     <string name="TGV">HSR</string>
     <string name="Analyse">Analysis of your consumption :</string>
-    <string name="Enregistrer">Register</string>
-    <string name="TextAbout">Enregistrer</string>
+    <string name="TextAbout">We created this application as part of a project on Android at the University of Toulouse.</string>
+    <string name="About">About</string>
 </resources>

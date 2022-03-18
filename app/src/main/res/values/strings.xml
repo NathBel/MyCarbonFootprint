@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">MyCarbonFootprint</string>
+
+    <string name="app_name" translatable="true">MyCarbonFootprint</string>
     <string name="Moto">Moto</string>
     <string name="Voiture">Voiture</string>
     <string name="Train">Train</string>
@@ -18,6 +19,6 @@
     <string name="Tramway">Tramway</string>
     <string name="TGV">TGV</string>
     <string name="Analyse">Analyse de votre conso :</string>
-    <string name="Enregistrer">Enregistrer</string>
-    <string name="TextAbout">Blablablabla</string>
+    <string name="TextAbout">Nous avons créé cette application dans le cadre d\'un projet sur Android à l\'Université de Toulouse.</string>
+    <string name="About">À Propos</string>
 </resources>
