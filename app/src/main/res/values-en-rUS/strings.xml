@@ -21,4 +21,5 @@
     <string name="Analyse">Analysis of your consumption :</string>
     <string name="TextAbout">We created this application as part of a project on Android at the University of Toulouse.</string>
     <string name="About">About</string>
+    <string name="History">History</string>
 </resources>

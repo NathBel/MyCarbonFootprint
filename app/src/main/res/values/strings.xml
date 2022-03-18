@@ -21,4 +21,5 @@
     <string name="Analyse">Analyse de votre conso :</string>
     <string name="TextAbout">Nous avons créé cette application dans le cadre d\'un projet sur Android à l\'Université de Toulouse.</string>
     <string name="About">À Propos</string>
+    <string name="History">Historique</string>
 </resources>
