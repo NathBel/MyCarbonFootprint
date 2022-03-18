@@ -1,4 +1,4 @@
-package com.example.mycarbonfootprint.Utils;
+package com.iut.mycarbonfootprint.Utils;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,7 +9,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 public class ClientDbHelper extends SQLiteOpenHelper {
-    public static final String CREATE_DB = "CREATE TABLE History (id INTEGER PRIMARY KEY AUTOINCREMENT, result REAL);";
+    public static final String CREATE_DB = "CREATE TABLE History (id INTEGER PRIMARY KEY AUTOINCREMENT, type INTEGER, distance REAL, result REAL);";
     public static final String DELETE_DB = "DROP TABLE IF EXISTS History;";
     public static String DATABASE_NAME = "MyCarbonFootPrint.db";
     public static int DATABASE_VERSION = 1;
@@ -32,21 +32,27 @@ public class ClientDbHelper extends SQLiteOpenHelper {
         onUpgrade(sqLiteDatabase, oldVersion, newVersion);
     }
 
-    public ArrayList<String> selectAll(SQLiteDatabase sqLiteDatabase) {
-        String[] col = {"id", "result"};
+    public ArrayList<ArrayList<String>> selectAll(SQLiteDatabase sqLiteDatabase) {
+        String[] col = {"id", "type", "distance", "result"};
         String[] select = {};
-        ArrayList<String> r = new ArrayList();
+        ArrayList<ArrayList<String>> r = new ArrayList();
 
         Cursor curs = sqLiteDatabase.query("History", col, "", select, null, null, "id ASC");
         if (curs.moveToFirst()) {
             do {
-                long id = curs.getLong(curs.getColumnIndexOrThrow("id"));
+                ArrayList<String> l = new ArrayList();
+                String id = curs.getString(curs.getColumnIndexOrThrow("id"));
+                String type = curs.getString(curs.getColumnIndexOrThrow("type"));
+                String distance = curs.getString(curs.getColumnIndexOrThrow("distance"));
                 String result = curs.getString(curs.getColumnIndexOrThrow("result"));
-                r.add(result);
-                Log.v("DBB", result);
+                l.add(type);
+                l.add(distance);
+                l.add(result);
+                r.add(l);
             } while (curs.moveToNext());
         }
         curs.close();
+        Log.v("DBB", r.toString());
         return r;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.mycarbonfootprint;
+package com.iut.mycarbonfootprint;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         train.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), OLDAnalyzeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TrainActivity.class);
                 startActivity(intent);
             }
         });
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         } else if (id == R.id.menuAbout) {
             Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+            intent.putExtra("info", "Ceci est un intent.");
             startActivity(intent);
         }
         return super.onOptionsItemSelected(i);
